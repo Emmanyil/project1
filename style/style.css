@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* THE ALL SITE */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* THE ALL SITE */
+
+/* HEADER */
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-left {
+  margin-left: 200px;
+}
+
+.nav-right {
+  margin-right: 200px;
+}
+
+li {
+  display: inline;
+}
+
+li > a {
+  color: #555555;
+  margin: 0 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  position: relative;
+}
+
+.active {
+  color: #5363db;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 1.5px;
+  background: #5363db;
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  margin-top: 5px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > h1 {
+  font-family: "Champagne & Limousines", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6a78e0;
+  padding-top: 5px;
+}
+/* HEADER */
+
+/* MAIN */
+.main {
+  flex-grow: 1;
+}
+
+.content {
+  position: relative;
+}
+
+.main-fon {
+  width: 100%;
+}
+
+.form {
+  position: absolute;
+  background: white;
+  border-radius: 12.5px;
+  height: auto;
+  top: 40px;
+  left: 390px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form>p{
+  color: #5363db;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  margin: 30px 110px 30px 30px;
+}
+
+.form>input{
+  margin: 0 0 15px 25px;
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px #f2f2f2 solid;
+}
+
+input:nth-child(4):after{
+  content: '56';
+  background: red;
+}
+
+.form-link{
+  background: #475bf1;
+  border-radius: 10px;
+  color: white;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 15px 0 30px 95px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form>select{
+  width: 15px;
+  left: 205px;
+  bottom: 115px;
+  border: 1px #f2f2f2 solid;
+  background: #f2f2f2;
+  position: absolute;
+}
+
+.text-on-fone{
+  position: absolute;
+  top: 80px;
+  right: 170px;
+  color: white;
+  
+}
+
+.text-on-fone>h1{
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.text-on-fone>p{
+  font-size: 38px;
+  font-family: "Freestyle Script";
+  line-height: 1.2;
+}
+
+/* MAIN */
+
+.footer {
+  background: black;
+  height: 100px;
+}
