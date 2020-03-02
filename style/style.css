@@ -12,68 +12,78 @@ a {
 .wrapper {
   display: flex;
   flex-direction: column;
+  /* width: 100%; */
+  width: 1920px;
   min-height: 100vh;
 }
 /* THE ALL SITE */
 
 /* HEADER */
 .header {
-  height: 80px;
+  /* height: 100px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .nav-left {
-  margin-left: 200px;
+  margin-left: 447px;
 }
 
 .nav-right {
-  margin-right: 200px;
+  margin-right: 511px;
 }
 
-li {
+.menu-box{
+  padding: 40px 0 43px;
+}
+
+.menu-box> li {
   display: inline;
 }
 
-li > a {
+.menu-box>li > a {
   color: #555555;
-  margin: 0 10px;
+  padding: 0 13px;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .link {
   position: relative;
 }
 
-.active {
+.menu-box .active {
   color: #5363db;
 }
 
 .active:after {
   content: "";
   display: block;
-  width: 35px;
-  height: 1.5px;
+  width: 30px;
+  height: 1px;
   background: #5363db;
   position: absolute;
   top: 100%;
-  left: 15px;
-  margin-top: 5px;
+  left: 32%;
+  margin-top: 2px;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3px 0 2px 0;
 }
 
 .logo > h1 {
   font-family: "Champagne & Limousines", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   color: #6a78e0;
-  padding-top: 5px;
+  padding: 5px 0 0 3px ;
+  letter-spacing: 2px;
 }
 /* HEADER */
 
@@ -93,75 +103,87 @@ li > a {
 .form {
   position: absolute;
   background: white;
-  border-radius: 12.5px;
+  border-radius: 20px;
   height: auto;
-  top: 40px;
-  left: 390px;
+  top: 100px;
+  left: 615px;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  align-content: center;
 }
 
 .form>p{
   color: #5363db;
-  font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-  margin: 30px 110px 30px 30px;
+  font-family: "Open Sans", sans-serif;font-weight: bold;
+  font-size: 25.64px;
+  margin: 38px 140px 13px 34px;
 }
 
 .form>input{
-  margin: 0 0 15px 25px;
-  width: 200px;
-  height: 30px;
+  margin: 17px 0 0 30px;
+  padding: 0 8px;
+  /* width: 230px; */
+  height: 50px;
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   background: #f2f2f2;
   border-radius: 8px;
-  padding-left: 10px;
+  word-spacing: -1px;
   border: 1px #f2f2f2 solid;
 }
 
-input:nth-child(4):after{
+/* input:nth-child(4):after{ 
   content: '56';
   background: red;
-}
+} */
 
 .form-link{
   background: #475bf1;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
-  width: 130px;
-  height: 50px;
+  width: 170px;
+  /* height: 50px; */
   text-align: center;
-  padding-top: 15px;
-  margin: 15px 0 30px 95px;
+  word-spacing: 2px;
+  padding: 16px 0;
+  margin: 30px 0 35px 95px;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.form>select{
+/* .form>select{ 
   width: 15px;
   left: 205px;
   bottom: 115px;
   border: 1px #f2f2f2 solid;
   background: #f2f2f2;
   position: absolute;
-}
+}*/
 
 .text-on-fone{
   position: absolute;
-  top: 80px;
-  right: 170px;
+  top: 158px;
+  right: 430px;
+  word-spacing: 3px;
   color: white;
   
 }
 
 .text-on-fone>h1{
-  font-size: 45px;
+  font-size: 48px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  line-height: 1.45;
   margin-bottom: 20px;
 }
 
 .text-on-fone>p{
-  font-size: 38px;
+  font-size: 40px;
+  padding-top: 10px;
+  word-spacing: 18px;
   font-family: "Freestyle Script";
   line-height: 1.2;
 }
