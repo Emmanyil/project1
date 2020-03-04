@@ -2,6 +2,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  border: none;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -46,9 +54,7 @@ a {
 .menu-box > li > a {
   color: #555555;
   padding: 0 13px;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 14px;
 }
 
 .link {
@@ -115,7 +121,7 @@ a {
   position: relative;
   background: white;
   border-radius: 20px;
-  box-shadow: 2px 2px 15px rgb(41, 41, 41);
+  box-shadow: 2px 2px 15px #4553c0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -124,7 +130,6 @@ a {
 
 .form > p {
   color: #5363db;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 25.64px;
   margin: 38px 0 29px 30px;
@@ -134,11 +139,8 @@ a {
 .form > input {
   width: 230px;
   height: 50px;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   background: #f2f2f2;
   border-radius: 8px;
-  border: none;
   margin-left: 30px;
 }
 
@@ -165,7 +167,6 @@ a {
 .form-button {
   background: #475bf1;
   border-radius: 8px;
-  border: none;
   cursor: pointer;
   color: white;
   text-align: center;
@@ -173,7 +174,6 @@ a {
   margin: 17px 0 0 95px;
   width: 170px;
   padding: 13px 0 15px;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
 }
@@ -200,7 +200,6 @@ a {
 .text-on-fone > h1 {
   font-size: 48px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   line-height: 1.46;
   letter-spacing: 0.8px;
@@ -219,7 +218,6 @@ a {
 
 /* TWO CONENT */
 .two-content{
-  border: 1px red solid;
   height: 1000px;
   display: flex;
   align-items: center;
@@ -227,7 +225,6 @@ a {
 }
 
 .block3{
-  /* border: 1px green solid; */
   width: 1170px;
   height: 825px;
   margin-bottom: 125px;
@@ -239,8 +236,7 @@ a {
 }
 
 .block3-text{
-  /* border: 1px blue solid; */
-  width: 420px;
+  max-width: 420px;
   height: 90px;
   margin-top: 42px;
   display: flex;
@@ -255,7 +251,6 @@ a {
   text-transform: uppercase;
   padding-top: 2px;
   letter-spacing: 0.4px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .block3-text>p{
@@ -268,18 +263,21 @@ a {
   font-family: "Freestyle Script";
 }
 
-.blocl3-boxs{
+.block3-boxs{
   /* border: 1px yellow solid; */
   width: 1170px;
   height: 625px;
   margin-top: 67px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .box-info{
-  /* border: 1px black solid; */
   width: 570px;
   height: 300px;
-  box-shadow: 3px 3px 10px #9e9e9e;
+  box-shadow: 3px 3px 15px #e4e4e4;
 }
 
 .box-info>img{
@@ -288,13 +286,11 @@ a {
 
 .box-text{
   margin-left: 300px;
-  width: 222px;
-  
+  width: 245px;
 }
 
 .box-text>h1{
   font-size: 20px;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 47px;
@@ -303,8 +299,6 @@ a {
 
 .box-text>blockquote{
   color: #6c6c6c;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   margin-top: 28px;
   line-height: 1.6;
   margin-top: 28px;
@@ -312,9 +306,61 @@ a {
 }
 
 .box-text>cite{
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   color: #999999;
+}
+
+
+/* THREE CONTENT */
+.gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* FOUR CONTENT */
+.four-content{
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us{
+  width: 1170px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-text>h1{
+  font-size: 30px;
+  font-weight: bold;
+  color: #5b6ceb;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  word-spacing: 1px;
+  letter-spacing: 0.1px;
+}
+
+.about-us-text>p{
+  line-height: 1.7;
+}
+
+.about-us-img{
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #c3c3c3;
+}
+
+.about-us-img::before{
+  content: "sdfs";
+  width: 50px;
+  height: 50px;
+  background: #0c0c0c;
+  border: 1px black solid;
+  position: relative;
+  z-index: 1;
 }
 
 /* MAIN */
@@ -364,5 +410,21 @@ a {
 
   .text-on-fone > p {
     font-size: 37px;
+  }
+
+  .block3{
+    margin-top: -350px;
+  }
+
+  .gallery{
+    margin-top: -230px;
+  }
+
+  .gallery>img{
+    width: 25%;
+  }
+
+  .about-us{
+    width: 1100px;
   }
 }
