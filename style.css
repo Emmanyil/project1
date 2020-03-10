@@ -195,7 +195,7 @@ a {
 }
 
 .first-content {
-  background: url("../img/slider-bg.png") center center / cover no-repeat;
+  background: url("./img/slider-bg.png") center center / cover no-repeat;
   display: flex;
   justify-content: center;
   position: relative;
@@ -206,8 +206,7 @@ a {
   justify-content: space-between;
   min-width: 930px;
   padding-bottom: 35px;
-  margin: 100px;
-  margin-left: 340px;
+  margin: 100px 100px 100px 340px;
   z-index: 1;
 }
 
@@ -322,6 +321,7 @@ select:focus {
 }
 
 .block3 {
+  width: 100%;
   height: 825px;
   margin-bottom: 125px;
   margin-top: 50px;
@@ -359,7 +359,6 @@ select:focus {
 }
 
 .block3-boxs {
-  min-height: 625px;
   margin-top: 68px;
   display: flex;
   flex-wrap: wrap;
@@ -370,10 +369,12 @@ select:focus {
 .box-info {
   max-width: 570px;
   box-shadow: 3px 3px 15px #e4e4e4;
+  margin-bottom: 20px;
 }
 
 .box-info > img {
   float: left;
+  width: 50%;
 }
 
 .box-text {
@@ -541,7 +542,7 @@ select:focus {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background: url("../img/feture-fone.png") center center / cover no-repeat;
+  background: url("./img/feture-fone.png") center center / cover no-repeat;
 }
 
 .features {
@@ -584,7 +585,7 @@ select:focus {
 
 /* SIX CONTENT */
 .six-content {
-  min-height: 1150px;
+  height: 1050px;
   margin-top: 100px;
   background: url(./img/lotos-decoration.png) center center / cover no-repeat;
 }
@@ -595,7 +596,7 @@ select:focus {
 }
 
 .box-prices {
-  max-width: 100%;
+  /* width: 100%; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -711,8 +712,8 @@ select:focus {
   position: absolute;
   color: #5b6ceb;
   font-size: 55px;
-  top: 100px;
-  right: -50px;
+  top: 80px;
+  right: -20px;
 }
 
 .bloquotes cite {
@@ -737,43 +738,6 @@ select:focus {
   left: 255px;
 }
 
-.blockquote-slider {
-  width: 50px;
-  position: relative;
-  left: 100%;
-  bottom: 55%; 
-  /* right: -20%; */
-}
-
-.slide {
-  border: 2px solid grey;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.slide:nth-child(2) {
-  /* border-color:  blue; */
-  border-radius: 50%;
-  /* width: 20px; */
-  /* height: 20px; */
-  /* margin-left: 20px; */
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-.slide > .slide-active {
-  background: blue;
-  border-radius: 50%;
-  /* margin: 0 auto; */
-  width: 10px;
-  height: 10px;
-  padding: 5px;
-}
-
 /* MAIN */
 
 /* FOOTER */
@@ -781,13 +745,14 @@ select:focus {
   background: #5b6ceb;
   /* height: 225px; */
   max-height: 450px;
+  /* margin-top: 100px; */
   padding: 100px 0;
   display: flex;
   align-items: center;
 }
 
 .decoration {
-  min-width: 1100px;
+  /* min-width: 1100px; */
   /* padding: 112.5px 0; */
   display: flex;
   justify-content: space-between;
@@ -804,10 +769,6 @@ select:focus {
   font-size: 18px;
   font-weight: bold;
 }
-
-/* .decoration>a{
-  font-size: 14px;
-} */
 
 .about > p {
   padding: 60px 0 70px;
@@ -830,6 +791,7 @@ select:focus {
 
 .contacts {
   max-width: 500px;
+  margin-left: 100px;
 }
 
 .icon-left li {
@@ -861,7 +823,7 @@ select:focus {
   font-size: 16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   .form-text {
     max-width: 850px;
     height: 360px;
@@ -899,32 +861,37 @@ select:focus {
   .text-on-fone > p {
     font-size: 37px;
   }
-  /* 
+
+  .block3-boxs {
+    display: flex;
+    justify-content: space-around;
+  }
+  
   .block3{
-    margin-top: -150px;
-  } */
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+  .box-info > img {
+    width: 45%;
+  }
+  .box-text {
+    margin-left: 250px;
+  }
+  .box-text > h1 {
+    padding-top: 18px;
+  }
+  .box-text > blockquote {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 
   .gallery > img {
     width: 25%;
     height: 25%;
   }
-  /* 
-  .hover >img{
-    width: 70%;
-  }
-  .hover::after {
-    top: 6px;
-    left: 11px;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .hover::before {
-    width: 25%;
-    height: 100%;
-  } */
 
   .about-us {
+    width: 100%;
     margin-top: -70px;
     display: block;
   }
@@ -935,4 +902,151 @@ select:focus {
   .yoga-gallery {
     margin-right: 180px;
   }
+
+
+  .box-prices{
+    /* margin: 0 30px; */
+  }
+  .box-prices h1 {
+    padding: 30px 110px;
+  }
+  .box-prices sub {
+    position: relative;
+    bottom: 52px;
+  }
+  .box-prices p {
+    padding-top: 45px;
+  }
+  .box-prices a {
+    margin: 45px 0;
+  }
+
+
+  .six-content {
+    height: 950px;
+  }
+
+
+
+  .five-content {
+    padding: 80px 0;
+  }
+  .features-boxs {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 1060px){
+  .form-text {
+    height: 360px;
+    margin: 30px 0;
+    padding-left: 150px;
+  }
+  /* .form-text {
+    max-width: 850px;
+    height: 360px;
+    margin: 30px;
+    padding-left: 150px;
+  } */
+  .text-on-fone {
+    width: 100px;
+    /* max-width: 100px; */
+    margin-top: 40px;
+    padding-right: 0;
+  }
+  .text-on-fone > h1 {
+    font-size: 37px;
+    width: 100%;
+  }
+
+  .text-on-fone > p {
+    font-size: 35px;
+  }
+
+
+  .box-info{
+    margin: 10px 10px;
+  }
+  .box-info > img {
+    width: 40%;
+  }
+  .box-text {
+    margin-left: 200px;
+  }
+  .box-text > h1 {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  .box-text > blockquote {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .box-text>cite{
+    font-size: 13px;
+  }
+
+
+  
+  .box-prices h1 {
+    font-size: 60px;
+    padding: 20px 90px;
+  }
+  .box-prices sub {
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    font-size: 16px;
+  }
+  .box-prices a {
+    margin: 35px 0;
+  }
+
+
+  
+.boxs-bloquotes {
+  /* margin-top: 110px; */
+  /* width: 1170px; */
+  height: 370px;
+  /* background: white;
+  box-shadow: 2px 2px 15px #c7c7c7;
+  border-radius: 10px; */
+  position: relative;
+}
+
+.bloquotes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloquotes img {
+  width: 290px;
+  height: 250px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+}
+
+.bloquotes blockquote {
+  padding-top: 0;
+  padding-bottom: 30px;
+  max-width: 500px;
+  font-size: 16px;
+}
+
+.bloquotes blockquote::before {
+  top: -20px;
+  left: -30px;
+}
+
+.bloquotes blockquote::after {
+  top: 60px;
+  right: -20px;
+}
+.bloquotes cite{
+  margin-left: -350px;
+}
+.bloquotes cite::before {
+  display: none;
+}
 }
