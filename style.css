@@ -57,7 +57,7 @@
 }
 .icon-mail:before {
   content: "\e905";
-  font-size: 20px;
+  font-size: 25px;
   padding-right: 20px;
 }
 .icon-map:before {
@@ -92,8 +92,8 @@ a {
   display: flex;
   flex-direction: column;
   /* max-width: 100%; */
-  width: 1920px;
-  /* width: 100%; */
+  /* width: 1920px; */
+  width: 100%;
   /* max-width: 1920px; */
   min-height: 100vh;
 }
@@ -143,11 +143,43 @@ a {
 .menu-box .active {
   color: #5363db;
 }
-
 .active:after {
   content: "";
   display: block;
   width: 30px;
+  height: 1px;
+  background: #5363db;
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-top: 1px;
+  
+}
+
+.menu-box a:hover {
+  color: #5363db;
+}
+
+.menu-box :hover .link:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #5363db;
+  position: absolute;
+  top: 100%;
+  left: 32%;
+  margin-top: 1px;
+}
+
+.link-two {
+  position: relative;
+}
+
+.menu-box :hover .link-active::after {
+  content: "";
+  display: block;
+  width: 20px;
   height: 1px;
   background: #5363db;
   position: absolute;
@@ -223,6 +255,15 @@ select {
   margin-bottom: 15px;
 }
 
+.form option {
+  color: black;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
 .form-button {
   background: #475bf1;
   border-radius: 8px;
@@ -235,6 +276,15 @@ select {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.form-button:hover{
+  background: white;
+  color: blue;
+  box-shadow: 5px 5px 20px blue;
+  transform: scale(1.1);
+  font-size: 20px;
 }
 
 .text-on-fone {
@@ -318,7 +368,7 @@ select {
 }
 
 .box-info {
-  width: 570px;
+  max-width: 570px;
   box-shadow: 3px 3px 15px #e4e4e4;
 }
 
@@ -609,11 +659,20 @@ select {
   font-weight: bold;
   padding: 16px 48px;
   background: #5b6ceb;
+  transition: transform 0.4s;
+}
+
+.box-prices a:hover{
+  background: white;
+  color: blue;
+  box-shadow: 5px 5px 20px blue;
+  transform: scale(1.1);
+  font-size: 20px;
 }
 
 .boxs-bloquotes {
   margin-top: 110px;
-  width: 1170px;
+  /* width: 1170px; */
   height: 250px;
   background: white;
   box-shadow: 2px 2px 15px #c7c7c7;
@@ -656,19 +715,19 @@ select {
   right: -50px;
 }
 
-.bloquotes cite{
+.bloquotes cite {
   color: #777777;
 }
 
-.bloquotes cite>p{
+.bloquotes cite > p {
   font-size: 20px;
   color: #5b6ceb;
   font-weight: bold;
   padding-top: 5px;
 }
 
-.bloquotes cite::before{
-  content: '';
+.bloquotes cite::before {
+  content: "";
   background: #d7d7d7;
   width: 2px;
   height: 75px;
@@ -678,34 +737,35 @@ select {
   left: 255px;
 }
 
-.blockquote-slider{
-  position: absolute;
+.blockquote-slider {
+  width: 50px;
+  position: relative;
   left: 100%;
-  top: 20px;
+  bottom: 55%; 
+  /* right: -20%; */
 }
 
-.slide{
+.slide {
   border: 2px solid grey;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 20px;
 }
 
-.slide:nth-child(2){
-  border: 2px solid blue;
+.slide:nth-child(2) {
+  /* border-color:  blue; */
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: 20px;
-  margin-left: 45px;
+  /* width: 20px; */
+  /* height: 20px; */
+  /* margin-left: 20px; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
-.slide > .slide-active{
+.slide > .slide-active {
   background: blue;
   border-radius: 50%;
   /* margin: 0 auto; */
@@ -762,6 +822,12 @@ select {
   justify-content: space-between;
 }
 
+.icon li:hover{
+  transform: scale(1.3);
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px white;
+}
+
 .contacts {
   max-width: 500px;
 }
@@ -775,11 +841,16 @@ select {
   flex-wrap: wrap;
 }
 
+.icon-planet{
+  padding-right: 30px;
+}
+
+
 .footer-copyright {
   background: #5363d8;
 }
 .copyright {
-  padding: 50px 0;
+  padding: 42px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -790,7 +861,7 @@ select {
   font-size: 16px;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1200px) {
   .form-text {
     max-width: 850px;
     height: 360px;
