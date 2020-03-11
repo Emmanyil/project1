@@ -1118,7 +1118,6 @@ select:focus {
 
 
 @media (max-width: 750px){
-  
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -1297,7 +1296,7 @@ select:focus {
     max-width: 570px;
   }
   .block3 {
-    min-height: 2600px;
+    min-height: 2500px;
     margin-top: -40px;
     margin-bottom: 20px;
   }
@@ -1404,7 +1403,7 @@ select:focus {
     max-width: 330px;
   }
    .block3 {
-    min-height: 2400px;
+    min-height: 2500px;
   } 
   .box-info {
     min-height: 500px;
@@ -1438,6 +1437,9 @@ select:focus {
     flex-direction: column;
   }
 
+  .five-content{
+    max-height: 2420px;
+  }
   .features-boxs{
     margin-left: 0;
   }
@@ -1476,7 +1478,7 @@ select:focus {
   .boxs-bloquotes {
     margin-top: 10px;
     margin-bottom: 0;
-    height: 370px;
+    height: 390px;
     position: relative;
   }
 
@@ -1497,7 +1499,9 @@ select:focus {
   }
   .bloquotes cite {
     margin-left: -80px;
+    
   }
+
 
 
   .copyright {
