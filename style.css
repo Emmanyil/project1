@@ -697,7 +697,7 @@ select:focus {
   color: #777777;
 }
 
-.bloquotes cite > p {
+.bloquotes p {
   font-size: 20px;
   color: #5b6ceb;
   font-weight: bold;
