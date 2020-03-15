@@ -109,17 +109,23 @@ a {
   width: 820px;
   margin-right: 71px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.menu-box > li {
-  display: inline;
+.menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu-box > li > a {
+.menu-box img{
+  padding: 0 50px;
+}
+
+.menu-box a {
   color: #555555;
-  padding: 0 13px;
+  padding: 0 15px;
   font-weight: bold;
 }
 
@@ -174,8 +180,11 @@ a {
   margin-top: 1px;
 }
 
-#menu__toggle,
-#menu__toggle2 {
+.logo-mobile{
+  display: none;
+}
+
+#menu__toggle {
   display: none;
 }
 
@@ -185,17 +194,6 @@ a {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 3;
-}
-.menu__btn2 {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  right: 20px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -218,10 +216,20 @@ a {
 .form-text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 930px;
-  padding-bottom: 35px;
-  margin: 100px 100px 100px 340px;
+  padding: 50px 0 100px;
   z-index: 1;
+}
+
+.form-left{
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text-right{
+  width: 50%;
 }
 
 .form {
@@ -233,14 +241,14 @@ a {
   flex-direction: column;
   align-content: center;
   width: 300px;
+  padding: 38px 0 20px 30px;
 }
 
-.form > p {
+.form > h2 {
   color: #5363db;
   font-weight: bold;
   font-size: 25.64px;
-  margin: 38px 0 29px 30px;
-  padding-left: 4px;
+  padding: 0 0 29px 4px;
 }
 
 .form > input,
@@ -249,21 +257,7 @@ select {
   height: 50px;
   background: #f2f2f2;
   border-radius: 8px;
-  margin-left: 30px;
   color: black;
-}
-
-.form > input:nth-child(2) {
-  padding: 0 10px 8px;
-  margin-bottom: 15px;
-}
-
-.form > input:nth-child(3) {
-  padding: 0 10px 2px;
-  margin-bottom: 17px;
-}
-
-.form > select {
   padding: 0 10px;
   margin-bottom: 15px;
 }
@@ -285,9 +279,9 @@ select:focus {
   cursor: pointer;
   text-align: center;
   word-spacing: 2px;
-  margin: 17px 0 20px 95px;
-  max-width: 170px;
-  padding: 13px 0 15px;
+  margin: 10px 0 0 80px;
+  max-width: 150px;
+  padding: 13px 0;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.4s;
@@ -303,7 +297,7 @@ select:focus {
 
 .text-on-fone {
   width: 570px;
-  height: 265px;
+  min-height: 265px;
   margin-top: 58px;
   padding-left: 35px;
   display: flex;
@@ -317,6 +311,7 @@ select:focus {
   line-height: 1.46;
   letter-spacing: 0.8px;
   display: inline;
+  padding-bottom: 30px;
 }
 
 .text-on-fone > p {
@@ -333,12 +328,11 @@ select:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0 100px;
 }
 
 .block3 {
   width: 100%;
-  height: 825px;
-  margin: 50px 0 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,28 +377,27 @@ select:focus {
   max-width: 570px;
   box-shadow: 3px 3px 15px #e4e4e4;
   margin-bottom: 20px;
+  display: flex;
 }
 
 .box-info > img {
-  float: left;
   width: 50%;
 }
 
 .box-text {
-  margin-left: 300px;
+  padding: 47px 0 30px 20px;
   width: 245px;
 }
 
-.box-text > h1 {
+.box-text > h2 {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 47px;
   letter-spacing: 0.3px;
   color: #777777;
 }
 
-.box-text > blockquote {
+.box-text > p {
   color: #6c6c6c;
   margin: 28px 0 10px;
   line-height: 1.6;
@@ -428,6 +421,7 @@ select:focus {
 
 .gallery-img > img {
   width: 100%;
+  margin-bottom: -4px;
 }
 
 .gallery-hover {
@@ -496,6 +490,7 @@ select:focus {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 300px;
 }
 
 .slick-next {
@@ -512,7 +507,7 @@ select:focus {
 
 .slick-prev::before,
 .slick-next::before {
-  color: #ff4d4d;
+  color: #6474f0;
   font-size: 60px;
 }
 
@@ -546,7 +541,7 @@ select:focus {
   margin-bottom: 27px;
 }
 
-.features-boxs > h1 {
+.features-boxs > h2 {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -565,8 +560,7 @@ select:focus {
 
 /* SIX CONTENT */
 .six-content {
-  height: 1050px;
-  margin-top: 100px;
+  padding: 100px 0;
   background: url(./img/lotos-decoration.png) center center / cover no-repeat;
 }
 
@@ -584,29 +578,30 @@ select:focus {
   box-shadow: 2px 2px 15px #c7c7c7;
 }
 
-.box-prices h1 {
+.title-prices sub{
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 47px;
+  text-transform: uppercase;
+}
+
+.title-prices {
   border-radius: 10px 10px 0 0;
   background: #5b6ceb;
   font-weight: bold;
   font-size: 67px;
-  padding: 41.5px 138px;
+  padding: 30px 80px 30px 90px;
+  display: flex;
+  justify-content: center;
 }
 
-.box-prices h1::before {
+.title-prices::before {
   content: "$";
   font-size: 32px;
   position: relative;
+  top: 20px;
   bottom: 10px;
   right: 20px;
-}
-
-.box-prices sub {
-  font-size: 18px;
-  font-weight: bold;
-  position: relative;
-  bottom: 63px;
-  left: 90px;
-  text-transform: uppercase;
 }
 
 .box-prices p {

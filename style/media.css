@@ -262,8 +262,13 @@
 
 @media (max-width: 750px) {
   .logo {
-    padding-left: 60px;
+    display: none;
   }
+
+  .logo-mobile {
+    display: block;
+  }
+  
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -282,7 +287,7 @@
     content: "";
     top: 8px;
   }
-  .menu__box {
+  .menu__box:not([not-menu]) {
     position: fixed;
     visibility: hidden;
     top: 0;
@@ -327,7 +332,7 @@
     left: 0;
   }
 
-  .menu__btn2 > span,
+  /* .menu__btn2 > span,
   .menu__btn2 > span::before,
   .menu__btn2 > span::after {
     display: block;
@@ -389,7 +394,7 @@
   #menu__toggle2:checked ~ .menu__box2 {
     visibility: visible;
     right: 0;
-  }
+  } */
 
   .first-content {
     min-height: 850px;
