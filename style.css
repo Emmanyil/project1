@@ -774,7 +774,6 @@ select:focus {
   font-size: 16px;
 }
 
-
 @media (max-width: 1240px) {
   .first-content {
     padding: 30px 0;
@@ -1195,12 +1194,16 @@ select:focus {
 
 @media (max-width: 590px) {
   .footer-decoration {
-    min-height: 600px;
     padding: 0;
+    min-height: 550px;
   }
   .decoration {
     display: flex;
     flex-direction: column;
+  }
+  .about,
+  .contacts {
+    width: 100%;
   }
   .about h1 {
     padding-bottom: 0;
@@ -1286,6 +1289,9 @@ select:focus {
   .box-prices h1 {
     padding: 20px 90px;
   }
+  .title-prices sub {
+    font-size: 14px;
+  }
 
   .boxs-bloquotes {
     margin: 10px 0 0;
@@ -1316,7 +1322,7 @@ select:focus {
   }
 
   .footer-decoration {
-    min-height: 700px;
+    min-height: 550px;
   }
 
   .copyright {
